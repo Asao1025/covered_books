@@ -1,0 +1,21 @@
+.leftContent {
+    width:50%;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.leftContent img {
+    width:100%;
+}
+
+.rightContent {
+    width:50%;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.rightContent img {
+    width:100%;
+}

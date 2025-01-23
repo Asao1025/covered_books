@@ -1,0 +1,22 @@
+.topImage {
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    background: url("http://localhost:3000/image/testGif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.topMessage {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: 'Kosugi', sans-serif;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
