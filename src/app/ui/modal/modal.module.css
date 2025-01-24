@@ -13,14 +13,20 @@
 
 .modalContent {
     background-color: white;
-    max-width: 500px;
+    max-width: 800px;
     text-align: center;
     z-index: 10000;
     position:relative;
+    padding: 0px;
+    line-height: 0;
 }
+
 .modalImg {
+    display: block;
     position: relative;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .modalCloseButton {

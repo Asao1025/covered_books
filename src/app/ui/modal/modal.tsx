@@ -21,9 +21,6 @@ const Modal = (Props) =>　{
                             src={Props.src}
                             alt="Sample Imageだよ" />
                         </div>
-                        <div className={styles.modalText}>
-                            ここに説明文を記載する<br/>
-                        </div>
                     </div>
                 </div>
               );
