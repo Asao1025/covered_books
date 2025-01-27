@@ -3,7 +3,13 @@ import React from "react";
 import { CloseOutlined } from '@ant-design/icons';
 import { FloatButton} from 'antd';
 
-const Modal = (Props) =>　{
+interface ModalProps {
+    setShowModal: (showFlg: boolean) => void;
+    showFlg: boolean;
+    src: string;
+}
+
+const Modal: React.FC<ModalProps> = (Props) =>　{
     const closeModal = () => {
         Props.setShowModal(false);
         }
