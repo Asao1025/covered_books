@@ -3,3 +3,8 @@
   background-size: cover; /* 画像をカバーするように設定 */
   background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
 }
+.p {
+    padding-right: 0px;
+    padding-left: auto;
+    font-size: 8px;
+}

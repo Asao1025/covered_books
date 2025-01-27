@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
 .topImage {
-    width: 100vw;
-    height: 200px;
     text-align: center;
     color: white;
     font-size: 150%;
-    background: url("http://localhost:3000/image/testGif.gif");
+    background: url("/image/topImage.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .topMessage {
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    font-family: 'Kosugi', sans-serif;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 200%;
+    font-family: "Shippori Mincho", serif;
     margin-left: auto;
     margin-right: auto;
+    height: 100vh;
 }
