@@ -9,7 +9,6 @@ export default function Home() {
         <TopImageComponent />
         <TopMessageComponent />
         <PopComponents />
-        <p>トップイメージ背景はFreepikより</p>
       </body>
   );
 }
