@@ -25,7 +25,7 @@ const Modal: React.FC<ModalProps> = (Props) =>　{
                         <div className={styles.modalImg}>
                             <img
                             src={Props.src}
-                            alt="Sample Imageだよ" />
+                            alt={Props.bookName} />
                         </div>
                     </div>
                 </div>
