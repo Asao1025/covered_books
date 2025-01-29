@@ -8,6 +8,7 @@ interface ModalProps {
     showFlg: boolean;
     src: string;
     link: string;
+    bookName: string;
 }
 
 const Modal: React.FC<ModalProps> = (Props) =>　{
