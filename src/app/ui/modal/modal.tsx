@@ -1,12 +1,13 @@
 import styles from '@/app/ui/modal/modal.module.css'
 import React from "react";
-import { CloseOutlined } from '@ant-design/icons';
-import { FloatButton} from 'antd';
+import { SearchOutlined, CloseOutlined } from '@ant-design/icons';
+import { Button, FloatButton} from 'antd';
 
 interface ModalProps {
     setShowModal: (showFlg: boolean) => void;
     showFlg: boolean;
     src: string;
+    link: string;
 }
 
 const Modal: React.FC<ModalProps> = (Props) =>　{
@@ -26,6 +27,14 @@ const Modal: React.FC<ModalProps> = (Props) =>　{
                             <img
                             src={Props.src}
                             alt={Props.bookName} />
+                        </div>
+                        <div>
+                            <Button className={styles.modalCartButton}
+                                    type="primary" size="large"
+                                    icon={<SearchOutlined />}
+                                    href={Props.link} target="_blank" rel="noopener noreferrer">
+                                    この本を見てみる
+                            </Button>
                         </div>
                     </div>
                 </div>

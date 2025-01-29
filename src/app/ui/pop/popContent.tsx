@@ -8,6 +8,7 @@ interface PopContentProps {
     img: string;
     bookName: string;
     paddingLeft: boolean;
+    link: string;
 }
 
 const PopContent: React.FC<PopContentProps> = (Props)=>{
@@ -21,10 +22,12 @@ const PopContent: React.FC<PopContentProps> = (Props)=>{
                 <div className={styles.leftContent}>
                     <img src={Props.img}
                     onClick={ShowModal}
-                    alt={Props.bookName}/>
+                    alt={Props.bookName}
+                    link={Props.link}/>
                     <Modal showFlg={showModal} setShowModal={setShowModal}
                            src={Props.img}
-                           bookName={Props.bookName}/>
+                           bookName={Props.bookName}
+                           link={Props.link}/>
                 </div>
                 )
         } else {
@@ -32,8 +35,12 @@ const PopContent: React.FC<PopContentProps> = (Props)=>{
                 <div className={styles.rightContent}>
                     <img src={Props.img}
                     onClick={ShowModal}
-                    alt={Props.bookName}/>
-                    <Modal showFlg={showModal} setShowModal={setShowModal} src={Props.img}/>
+                    alt={Props.bookName}
+                    link={Props.link}/>
+                    <Modal showFlg={showModal} setShowModal={setShowModal}
+                           src={Props.img}
+                           bookName={Props.bookName}
+                           link={Props.link}/>
                 </div>
             )
         }
