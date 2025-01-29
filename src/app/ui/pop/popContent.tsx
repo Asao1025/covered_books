@@ -22,12 +22,12 @@ const PopContent: React.FC<PopContentProps> = (Props)=>{
                 <div className={styles.leftContent}>
                     <img src={Props.img}
                     onClick={ShowModal}
-                    alt={Props.bookName}
-                    link={Props.link}/>
+                    alt={Props.bookName}/>
                     <Modal showFlg={showModal} setShowModal={setShowModal}
                            src={Props.img}
+                           link={Props.link}
                            bookName={Props.bookName}
-                           link={Props.link}/>
+                           />
                 </div>
                 )
         } else {
@@ -35,12 +35,11 @@ const PopContent: React.FC<PopContentProps> = (Props)=>{
                 <div className={styles.rightContent}>
                     <img src={Props.img}
                     onClick={ShowModal}
-                    alt={Props.bookName}
-                    link={Props.link}/>
+                    alt={Props.bookName}/>
                     <Modal showFlg={showModal} setShowModal={setShowModal}
                            src={Props.img}
-                           bookName={Props.bookName}
-                           link={Props.link}/>
+                           link={Props.link}
+                           bookName={Props.bookName}/>
                 </div>
             )
         }
