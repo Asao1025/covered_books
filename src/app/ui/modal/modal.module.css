@@ -26,10 +26,15 @@
     padding: 0px;
 }
 
+.modalCartButton {
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+}
+
 @media screen and (min-width: 1024px) {
     /* PC */
     .modalContent {
-        background-color: white;
         max-width: 800px;
         text-align: center;
         z-index: 10000;
@@ -42,7 +47,6 @@
 @media screen and (max-width: 1023px) {
     /* SP */
     .modalContent {
-        background-color: white;
         max-width: 80%;
         text-align: center;
         z-index: 10000;
